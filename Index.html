@@ -1,0 +1,41 @@
+OCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>My Machine Learning Model</title>
+    <link href="styles.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <div class="bubble">
+      <h1>My Machine Learning Model - Image Edition 📷</h1>
+      <p>
+        This model is created to identify an image of wallet, bag, and pen, for
+        us to see if a machine could identify between similar and different
+        object.
+      </p>
+
+      <button type="button" onclick="init()" id="start">Start!</button>
+
+      <div id="webcam-container"></div>
+      <!-- Camera for testing data -->
+      <div id="label-container"></div>
+      <!-- Show the predicted label -->
+    </div>
+
+    <div class="bubble">
+      <img src="https://thumbs2.imgbox.com/f6/f1/E0nA6tyF_t.jpeg" />
+      <h1>About the Creator</h1>
+      <p>
+        Hello! My name is El Quina, I'm an INTJ. This is my first ever machine
+        learning model using image, I hope this project could be useful.
+      </p>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@latest/dist/teachablemachine-image.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
